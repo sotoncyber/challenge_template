@@ -27,7 +27,11 @@ python -m poetry run gunicorn 'challenge:app'
 ```
 
 ## Running with docker
+Run on local machine:
+```
+docker-compose -p "<project name>" -f "docker/dev-compose.yaml" up --build
+```
 
-```
-docker-compose -p "<project name>" -f "docker/compose.yaml" up --build
-```
+So it can be run on sucss server:
+- Edit `docker/prod-compose.yaml` and change all occurrences of `<challenge_name>` to the subdomain of the challenge.
+For example if you want the challenge to be hosted on `challenge.sucss.org` then replace `<challenge_name>` with `challenge`.
