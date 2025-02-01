@@ -1,9 +1,10 @@
 [tool.poetry]
 name = "challenge-template"
-version = "0.1.0"
+version = "0.1.1"
 description = "SUCSS Challenge template"
 authors = ["Skyler Mansfield <skyler.mansfield.21@gmail.com>"]
 readme = "README.md"
+package-mode = false
 
 [tool.poetry.scripts]
 dev = "challenge:main"
