@@ -1,6 +1,15 @@
 {% extends 'layout.html' %}
 
 {% block content %}
-    <h1>Challenge 2</h1>
-    <p>This is an example using a flask View to render a template</p>
+    <h1>Challenge 1</h1>
+    <form method="post">
+        <label>Username:</label><br />
+        {{ form.username }}
+        <label>Password:</label><br />
+        {{ form.password }}
+        <button type="submit">Submit</button>
+    </form>
+    <p>
+        {{ response }}
+    </p>
 {% endblock %}
