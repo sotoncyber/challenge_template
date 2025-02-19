@@ -1,6 +1,7 @@
 import flask
-from challenge import app, forms
 from flask import render_template
+
+from challenge import app, forms
 
 
 @app.route('/', methods=['GET'])
