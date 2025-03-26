@@ -7,7 +7,7 @@ COPY poetry.lock /app/poetry.lock
 
 WORKDIR /app
 
-RUN poetry install --no-dev
+RUN poetry install --without dev
 
 COPY . /app
 
