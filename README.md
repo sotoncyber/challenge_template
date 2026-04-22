@@ -10,8 +10,18 @@ Ensure you have python poetry installed - this is used to install a virtualenv a
 ```
 pip install --upgrade pip --user
 pip3 install poetry
+```
+
+then
+
+```
 python -m poetry install --no-root
 ```
+or
+```
+poetry install --no-root
+```
+
 
 ## Running in development
 
@@ -19,11 +29,19 @@ Flask comes with a development server built in. To use it, run
 ```
 python -m poetry run flask -A challenge run
 ```
+or
+```
+poetry run flask -A challenge run
+```
 
 ## Running in production
 
 ```
 python -m poetry run gunicorn 'challenge:app'
+```
+or
+```
+poetry run gunicorn 'challenge:app'
 ```
 
 ## Running with docker
